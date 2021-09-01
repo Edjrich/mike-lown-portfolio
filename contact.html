@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Mike Lown - Contact</title>
 </head>
 <body>
@@ -16,32 +21,43 @@
                 <li><a href="/contact.html">Contact</a></li>
             </ul>
         </nav>
-        <h1>Let's work together</h1>
-        <div>
-            <img src="/assets/mac-hello.png" alt="">
-        </div>        
-        <p>Blurb on collaborating</p>
+        <div class="wrapper">
+            <h1>Let's work together</h1>
+            <div>
+                <img src="/assets/mac-hello.png" alt="">
+            </div>        
+            <p>Blurb on collaborating</p>
+        </div>
     </header>
     
     <main>
-        <form action="submit">
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name">
-
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email">
-
-            <label for="message">Message</label>
-            <textarea name="message" id="message" cols="30" rows="10"></textarea>
-
-            <button>Submit</button>
-        </form>
+        <div class="wrapper">
+            <form action="submit">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+    
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+    
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+    
+                <button>Submit</button>
+            </form>
+        </div>
     </main>
 
     <footer>
-        <p>Maybe have another nav down here? Link to contact form?</p>
-        <p>Should probably like to linkedin, email, and everything else too</p>
-        <p>Made in collaboration with <a href="https://ericrichardson.ca/">Eric Richardson</a> 2021</p>
+        <div class="wrapper">
+            <nav>
+                <ul>
+                    <li><a href="">Email</a></li>
+                    <li><a href="">Resume</a></li>
+                    <li><a href="">LinkedIn</a></li>
+                </ul>
+            </nav>
+            <p>Made in collaboration with <a href="https://ericrichardson.ca/">Eric Richardson</a> 2021</p>
+        </div>
     </footer>
 </body>
 </html>

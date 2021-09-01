@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Mike Lown - Portfolio</title>
 </head>
@@ -18,11 +22,13 @@
             </ul>
         </nav>
 
-        <h1>Showcase</h1>
+        <div class="wrapper">
+            <h1>Showcase</h1>
+        </div>
     </header>
     <main>
         <section class="project-bleed ios-app">
-            <div class="project">
+            <div class="project wrapper">
                 <h2>Case Study</h2>
                 <h3>IOS Native Apps</h3>
                 <h4>Apple Podcast App</h4>
@@ -30,7 +36,7 @@
         </section>
 
         <section class="project-bleed packd">
-            <div class="project">
+            <div class="project wrapper">
                 <h2>Case Study</h2>
                 <h3>Pack'd</h3>
                 <h4>Know what to pack for your next trip</h4>
@@ -38,7 +44,7 @@
         </section>
 
         <section class="project-bleed">
-            <div class="project">
+            <div class="project wrapper">
                 <h2>Case Study</h2>
                 <h3>Placeholder</h3>
                 <h4>A detailed PLACEHOLDER</h4>
@@ -47,9 +53,16 @@
     </main>
 
     <footer>
-        <p>Maybe have another nav down here? Link to contact form?</p>
-        <p>Should probably like to linkedin, email, and everything else too</p>
-        <p>Made in collaboration with <a href="https://ericrichardson.ca/">Eric Richardson</a> 2021</p>
+        <div class="wrapper">
+            <nav>
+                <ul>
+                    <li><a href="">Email</a></li>
+                    <li><a href="">Resume</a></li>
+                    <li><a href="">LinkedIn</a></li>
+                </ul>
+            </nav>
+            <p>Made in collaboration with <a href="https://ericrichardson.ca/">Eric Richardson</a> 2021</p>
+        </div>
     </footer>
 </body>
 </html>

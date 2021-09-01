@@ -8,13 +8,46 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
+/* GENERAL STYLING */
+
+@font-face {
+    font-family: spartan;
+    src: url(/assets/league-spartan/LeagueSpartan-Bold.otf);
+}
+
+html {
+    background-color: #0F1012;
+    color: #FFFFFF;
+    /* font-family: spartan; */
+    font-family: 'Roboto Slab', serif;
+}
+
 img {
     width: 100%;
     height: auto;
 }
 
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* INDEX */
+
+/* UX/PORTFOLIO */
+
 .ios-app {
     background-image: url(/assets/apc-hero.png);
     background-repeat:no-repeat;
     background-size: cover;
-    height: 50vh;}
+}
+
+/* ABOUT */
+
+/* CONTACT */
+
+form {
+    display: flex;
+    flex-direction: column;
+    row-gap: .4em;
+}
