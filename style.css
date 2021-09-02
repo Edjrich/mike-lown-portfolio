@@ -32,6 +32,12 @@ img {
     margin: 0 auto;
 }
 
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
 /* INDEX */
 
 /* UX/PORTFOLIO */
