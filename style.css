@@ -10,6 +10,12 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 /* GENERAL STYLING */
 
+:root {
+    --purple: #6a46fe;
+    --light-blue: #25f8ea;
+    --dark-blue: #3633ff;
+}
+
 @font-face {
     font-family: spartan;
     src: url(/assets/league-spartan/LeagueSpartan-Bold.otf);
@@ -18,8 +24,15 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 html {
     background-color: #0F1012;
     color: #FFFFFF;
-    /* font-family: spartan; */
-    font-family: 'Roboto Slab', serif;
+    font-family: spartan;
+    /* font-family: 'Roboto Slab', serif; */
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    text-align: center;
+    line-height: 1.5em;
 }
 
 img {
@@ -34,7 +47,7 @@ img {
 
 ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content:space-around;
     list-style-type: none;
 }
 
@@ -44,13 +57,38 @@ ul {
 
 .ios-app {
     background-image: url(/assets/apc-hero.png);
-    background-repeat:no-repeat;
+}
+
+.packd {
+    background-image: url(/assets/packd.jpg);
+}
+
+.project-bleed {
+    background-repeat: no-repeat;
     background-size: cover;
+    /* height: vh50; */
 }
 
 /* ABOUT */
 
+.hobbies {
+    background-color: #FFFFFF;
+    color: var(--purple);
+}
+
+.hobby {
+    padding: 1.5rem 0rem;
+    text-align: center;
+}
+
 /* CONTACT */
+
+.contact-span {
+    color: var(--purple);
+    border-bottom: 1px solid;
+    /* above is underline from original design, would recommend underline OR italics but not both */
+    font-style: italic;
+}
 
 form {
     display: flex;
