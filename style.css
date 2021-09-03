@@ -31,6 +31,11 @@ html {
     /* font-family: 'Roboto Slab', serif; */
 }
 
+/* * {
+    padding: 0;
+    margin: 0;
+} */
+
 h1, 
 h2,
 h3 {
@@ -55,18 +60,11 @@ img {
 }
 
 ul {
-    display: flex;
-    justify-content:right;
     list-style-type: none;
 }
 
 li {
     padding: 0em .5em;
-}
-
-
-nav {
-    display: flex;
 }
 
 /* HAMBURGER */
@@ -90,10 +88,6 @@ nav {
 .hamburger:focus {
     outline: none;
 }
-
-/* .nav-ul {
-
-} */
 
 /* INDEX */
 
@@ -127,7 +121,7 @@ nav {
     justify-content: center;
 }
 
-.case-study-button {
+.purple-button {
     padding: 1em 1em;
     margin: 1rem 0;
     border-radius: .4em;
@@ -140,7 +134,7 @@ nav {
     letter-spacing: 0.05em;
 }
 
-/* .project .case-study-button {
+/* .project .purple-button {
     display: flex;
     justify-content: center;
 } */
@@ -207,6 +201,21 @@ form {
     font-family: var(--main-text);
     letter-spacing: 0.05em;
     /* font-weight: bold; */
+}
+
+
+/* FOOTER */
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    /* DO NOT FORGET TO REMOVE THIS LATER AFTER ADDING WILDCARD SELECTOR */
 }
 
 
