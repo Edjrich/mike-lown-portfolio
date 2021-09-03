@@ -14,6 +14,8 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
     --purple: #6a46fe;
     --light-blue: #25f8ea;
     --dark-blue: #3633ff;
+    --main-text: 'Roboto Slab', serif;
+
 }
 
 @font-face {
@@ -22,17 +24,24 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 }
 
 html {
-    background-color: #0F1012;
+    background-color: #000;
     color: #FFFFFF;
     font-family: spartan;
+    letter-spacing: 0.02em;
     /* font-family: 'Roboto Slab', serif; */
 }
 
-h1 {
+h1, 
+h2,
+h3 {
     text-transform: uppercase;
-    letter-spacing: 0.15em;
-    text-align: center;
+    letter-spacing: 0.1em;
+    /* text-align: center; */
     line-height: 1.5em;
+}
+
+p {
+    font-family: var(--main-text);
 }
 
 img {
@@ -47,8 +56,12 @@ img {
 
 ul {
     display: flex;
-    justify-content:space-around;
+    justify-content:right;
     list-style-type: none;
+}
+
+li {
+    padding: 0em .5em;
 }
 
 /* INDEX */
@@ -74,11 +87,16 @@ ul {
 .hobbies {
     background-color: #FFFFFF;
     color: var(--purple);
+    padding-top: 2rem;
+    text-align: center;
 }
 
 .hobby {
     padding: 1.5rem 0rem;
-    text-align: center;
+}
+
+.dark-text {
+    color: #000;
 }
 
 /* CONTACT */
@@ -94,4 +112,18 @@ form {
     display: flex;
     flex-direction: column;
     row-gap: .4em;
+}
+
+button {
+    width: 20%;
+    max-width: 10rem;
+    padding: .75em .5em;
+    border-radius: .4em;
+    border: none;
+    background-color: var(--purple);
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: var(--main-text);
+    letter-spacing: 0.05em;
+    /* font-weight: bold; */
 }
