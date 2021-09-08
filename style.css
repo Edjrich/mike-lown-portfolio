@@ -257,13 +257,13 @@ li {
 }
 
 .project-bleed {
-    border: dodgerblue 1px solid;
+    /* border: dodgerblue 1px solid; */
     display: flex;
     align-items: center;
 }
 
 .project {
-    border: red 1px solid;
+    /* border: red 1px solid; */
     /* padding: 1.5rem 0rem; */
 }
 
@@ -356,6 +356,13 @@ form {
 
 
 /* FOOTER */
+
+footer {
+    background-color: white;
+    color: black;
+    padding: 2rem 0rem;
+}
+
 .footer-nav {
     display: flex;
     flex-direction: column;
