@@ -24,6 +24,8 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 }
 
 html {
+    /* font-size: 125%; */
+    scroll-behavior: smooth;
     background-color: #000;
     color: #FFFFFF;
     font-family: spartan;
@@ -71,13 +73,16 @@ li {
 
 /* HAMBURGER */
 
-/* .nav-container {
-    padding: 1rem 0rem;
+.nav-container {
+    /* padding: 1rem 0rem; */
     display: flex;
-} */
+    justify-content: space-between;
+    /* border: red 1px solid; */
+}
 
 .ham-nav {
     position: fixed;
+    position: -webkit-sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -92,10 +97,50 @@ li {
 .ham-ul {
     justify-content: center;
     align-items: center;
+    text-transform: uppercase;
+    /* align-items: center; */
+}
+
+.ham-ul li {
+    padding: 1rem 0;
 }
 
 .ham-ul li a {
     text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    color: black;
+    padding: 1rem 0;
+}
+
+.ham-ul li a::after{
+    position: relative;
+    display: block;
+    content: "";
+    top: 18px;
+    width: 100%;
+    height: 3px;
+    background: transparent;
+    color: green;
+    /* transition: width .5s ease background-color .5s ease; */
+}
+
+.ham-ul li a:hover {
+    color: var(--purple);
+    /* border-bottom: 1px solid var(--purple); */
+    transition: .2s ease-in-out;
+    /* border: 1px red solid; */
+    /* background-image: linear-gradient(to right, var(--purple) 100%, #fff 0);
+    background-position: 0 75%;
+    background-repeat: repeat-x;
+    background-size: 100% 5%;
+    width: min-content; */
+    /* transition: all 0.5s ease-in-out; */
+}
+
+.logo-container {
+    display: flex;
+    width: 25%;
 }
 
 .hamburger {
@@ -152,11 +197,6 @@ li {
 .bars::after {
     top: -.4em;
     /* background-color: var(--purple); */
-}
-
-.logo-container {
-    display: flex;
-    justify-content: center;
 }
 
 .logo {
@@ -262,10 +302,10 @@ li {
     align-items: center;
 }
 
-.project {
-    /* border: red 1px solid; */
-    /* padding: 1.5rem 0rem; */
-}
+/* .project {
+    border: red 1px solid; 
+    padding: 1.5rem 0rem;
+} */
 
 .button-container {
     display: flex;
@@ -354,6 +394,12 @@ form {
     /* font-weight: bold; */
 }
 
+/* MAIN */
+
+.main-section {
+    padding-bottom: 1.5rem;
+}
+
 
 /* FOOTER */
 
@@ -390,6 +436,9 @@ footer {
         display: flex;
         background-color: white;
         height: 100vh;
+        /* transform: scale(1, 0);
+        transition: transform 400ms ease-in-out; */
+        /* transform-origin: top; */
     }
     
     .hamburger {
