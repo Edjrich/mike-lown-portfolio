@@ -73,23 +73,20 @@ li {
 
 /* HAMBURGER */
 
-.nav-container {
-    /* padding: 1rem 0rem; */
-    display: flex;
-    justify-content: space-between;
-    /* border: red 1px solid; */
-}
-
 .ham-nav {
     position: fixed;
     position: -webkit-sticky;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    z-index: 10;
+    /* border: 1px red solid; */
+
     /* align-items: center; */
     /* justify-content: center; */
 }
@@ -98,6 +95,11 @@ li {
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+
     /* align-items: center; */
 }
 
@@ -138,14 +140,28 @@ li {
     /* transition: all 0.5s ease-in-out; */
 }
 
+.ham-ul.show {
+        display: flex;
+        background-color: white;
+        height: 100vh;
+        /* transform: scale(1, 0);
+        transition: transform 400ms ease-in-out; */
+        /* transform-origin: top; */
+    }
+
 .logo-container {
     display: flex;
-    width: 25%;
+}
+
+.logo {
+    max-width: 5rem;
+    /* width: 30%; */
+    margin-bottom: 1em;
 }
 
 .hamburger {
-    display: flex;
-    justify-content: end;
+    /* display: flex;
+    justify-content: end; */
     background-color: transparent;
     border: 0;
     color: white;
@@ -155,11 +171,11 @@ li {
     /* width: 3em; */
     height: 1.5em;
     position: relative;
-    z-index: 10;
     top: 10px;
-    /* left: 10px; */
+    left: 10px;
     margin-bottom: .5em;
     padding: 0;
+    display: block;
 }
 
 .hamburger:focus {
@@ -199,11 +215,6 @@ li {
     /* background-color: var(--purple); */
 }
 
-.logo {
-    width: 30%;
-    margin-bottom: 1em;
-}
-
 /* HAMBURGER ANIMATION */
 
 .hamburger.active .bars {
@@ -224,6 +235,16 @@ li {
     top: 0;
     transform:rotate(135deg);
     /* box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); */
+}
+
+.logo-container.hide {
+    display: none;
+}
+
+.hero, 
+.contact-image-container, 
+.about-header-container {
+    padding-top: 4rem;
 }
 
 
@@ -422,26 +443,3 @@ footer {
     /* DO NOT FORGET TO REMOVE THIS LATER AFTER ADDING WILDCARD SELECTOR */
 }
 
-
-
-/* HAMBURGER QUERIES */
-@media (max-width: 700px) {
-    .ham-ul {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .ham-ul.show {
-        display: flex;
-        background-color: white;
-        height: 100vh;
-        /* transform: scale(1, 0);
-        transition: transform 400ms ease-in-out; */
-        /* transform-origin: top; */
-    }
-    
-    .hamburger {
-        display: block;
-    }
-}
