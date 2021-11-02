@@ -33,10 +33,12 @@ html {
     /* font-family: 'Roboto Slab', serif; */
 }
 
-/* * {
+*,
+figure {
     padding: 0;
     margin: 0;
-} */
+}
+/* wildcard */
 
 h1, 
 h2,
@@ -69,6 +71,12 @@ ul {
 
 li {
     padding: 0em .5em;
+}
+
+p, 
+h2,
+h3 {
+    padding: .5rem 0;
 }
 
 /* HAMBURGER */
@@ -112,25 +120,37 @@ li {
     color: black;
     font-size: 2rem;
     color: black;
-    padding: 1rem 0;
+    padding: 1.3rem 0;
 }
 
-.ham-ul li a::after{
+.ham-link::after {
     position: relative;
     display: block;
     content: "";
-    top: 18px;
-    width: 100%;
+    width: 0;
     height: 3px;
-    background: transparent;
-    color: green;
-    /* transition: width .5s ease background-color .5s ease; */
+    background-color: transparent;
+    /* background-position: top right; */
+    transition: width .4s ease;
 }
 
-.ham-ul li a:hover {
+.ham-link:hover::after{
+    /* position: relative; */
+    display: block;
+    content: "";
+    width: 100%;
+    background-color: var(--purple);
+    /* background-position: left bottom; */
+}
+
+/* .ham-link:hover {
+    border-bottom: 2px solid black;
+} */
+
+/* .ham-ul li a:hover {
     color: var(--purple);
     /* border-bottom: 1px solid var(--purple); */
-    transition: .2s ease-in-out;
+    /* transition: .2s ease-in-out; */
     /* border: 1px red solid; */
     /* background-image: linear-gradient(to right, var(--purple) 100%, #fff 0);
     background-position: 0 75%;
@@ -138,7 +158,7 @@ li {
     background-size: 100% 5%;
     width: min-content; */
     /* transition: all 0.5s ease-in-out; */
-}
+/* } */ 
 
 .ham-ul.show {
         display: flex;
@@ -156,7 +176,6 @@ li {
 .logo {
     max-width: 5rem;
     /* width: 30%; */
-    margin-bottom: 1em;
 }
 
 .hamburger {
@@ -303,6 +322,14 @@ li {
 
 /* INDEX */
 
+.headshot-container { 
+    text-align: center;
+}
+
+.headshot-container img {
+    max-width: 650px;
+}
+
 /* UX/PORTFOLIO */
 
 .ios-app {
@@ -379,6 +406,10 @@ li {
 
 .contact-heading {
     text-align: center;
+}
+
+.contact-body {
+    padding: 1.5rem 0;
 }
 
 .contact-span {
