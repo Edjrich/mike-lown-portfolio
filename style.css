@@ -24,6 +24,8 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 }
 
 html {
+    /* font-size: 125%; */
+    scroll-behavior: smooth;
     background-color: #000;
     color: #FFFFFF;
     font-family: spartan;
@@ -31,10 +33,12 @@ html {
     /* font-family: 'Roboto Slab', serif; */
 }
 
-/* * {
+*,
+figure {
     padding: 0;
     margin: 0;
-} */
+}
+/* wildcard */
 
 h1, 
 h2,
@@ -69,22 +73,28 @@ li {
     padding: 0em .5em;
 }
 
-/* HAMBURGER */
+p, 
+h2,
+h3 {
+    padding: .5rem 0;
+}
 
-/* .nav-container {
-    padding: 1rem 0rem;
-    display: flex;
-} */
+/* HAMBURGER */
 
 .ham-nav {
     position: fixed;
+    position: -webkit-sticky;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    z-index: 10;
+    /* border: 1px red solid; */
+
     /* align-items: center; */
     /* justify-content: center; */
 }
@@ -92,15 +102,85 @@ li {
 .ham-ul {
     justify-content: center;
     align-items: center;
+    text-transform: uppercase;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+
+    /* align-items: center; */
+}
+
+.ham-ul li {
+    padding: 1rem 0;
 }
 
 .ham-ul li a {
     text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    color: black;
+    padding: 1.3rem 0;
+}
+
+.ham-link::after {
+    position: relative;
+    display: block;
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: transparent;
+    /* background-position: top right; */
+    transition: width .4s ease;
+}
+
+.ham-link:hover::after{
+    /* position: relative; */
+    display: block;
+    content: "";
+    width: 100%;
+    background-color: var(--purple);
+    /* background-position: left bottom; */
+}
+
+/* .ham-link:hover {
+    border-bottom: 2px solid black;
+} */
+
+/* .ham-ul li a:hover {
+    color: var(--purple);
+    /* border-bottom: 1px solid var(--purple); */
+    /* transition: .2s ease-in-out; */
+    /* border: 1px red solid; */
+    /* background-image: linear-gradient(to right, var(--purple) 100%, #fff 0);
+    background-position: 0 75%;
+    background-repeat: repeat-x;
+    background-size: 100% 5%;
+    width: min-content; */
+    /* transition: all 0.5s ease-in-out; */
+/* } */ 
+
+.ham-ul.show {
+        display: flex;
+        background-color: white;
+        height: 100vh;
+        /* transform: scale(1, 0);
+        transition: transform 400ms ease-in-out; */
+        /* transform-origin: top; */
+    }
+
+.logo-container {
+    display: flex;
+}
+
+.logo {
+    max-width: 5rem;
+    /* width: 30%; */
 }
 
 .hamburger {
-    display: flex;
-    justify-content: end;
+    /* display: flex;
+    justify-content: end; */
     background-color: transparent;
     border: 0;
     color: white;
@@ -110,11 +190,11 @@ li {
     /* width: 3em; */
     height: 1.5em;
     position: relative;
-    z-index: 10;
     top: 10px;
-    /* left: 10px; */
+    left: 10px;
     margin-bottom: .5em;
     padding: 0;
+    display: block;
 }
 
 .hamburger:focus {
@@ -154,16 +234,6 @@ li {
     /* background-color: var(--purple); */
 }
 
-.logo-container {
-    display: flex;
-    justify-content: center;
-}
-
-.logo {
-    width: 30%;
-    margin-bottom: 1em;
-}
-
 /* HAMBURGER ANIMATION */
 
 .hamburger.active .bars {
@@ -184,6 +254,16 @@ li {
     top: 0;
     transform:rotate(135deg);
     /* box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); */
+}
+
+.logo-container.hide {
+    display: none;
+}
+
+.hero, 
+.contact-image-container, 
+.about-header-container {
+    padding-top: 4rem;
 }
 
 
@@ -242,6 +322,14 @@ li {
 
 /* INDEX */
 
+.headshot-container { 
+    text-align: center;
+}
+
+.headshot-container img {
+    max-width: 650px;
+}
+
 /* UX/PORTFOLIO */
 
 .ios-app {
@@ -257,15 +345,15 @@ li {
 }
 
 .project-bleed {
-    border: dodgerblue 1px solid;
+    /* border: dodgerblue 1px solid; */
     display: flex;
     align-items: center;
 }
 
-.project {
-    border: red 1px solid;
-    /* padding: 1.5rem 0rem; */
-}
+/* .project {
+    border: red 1px solid; 
+    padding: 1.5rem 0rem;
+} */
 
 .button-container {
     display: flex;
@@ -320,6 +408,10 @@ li {
     text-align: center;
 }
 
+.contact-body {
+    padding: 1.5rem 0;
+}
+
 .contact-span {
     color: var(--purple);
     border-bottom: 1px solid;
@@ -354,8 +446,21 @@ form {
     /* font-weight: bold; */
 }
 
+/* MAIN */
+
+.main-section {
+    padding-bottom: 1.5rem;
+}
+
 
 /* FOOTER */
+
+footer {
+    background-color: white;
+    color: black;
+    padding: 2rem 0rem;
+}
+
 .footer-nav {
     display: flex;
     flex-direction: column;
@@ -369,23 +474,3 @@ form {
     /* DO NOT FORGET TO REMOVE THIS LATER AFTER ADDING WILDCARD SELECTOR */
 }
 
-
-
-/* HAMBURGER QUERIES */
-@media (max-width: 700px) {
-    .ham-ul {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .ham-ul.show {
-        display: flex;
-        background-color: white;
-        height: 100vh;
-    }
-    
-    .hamburger {
-        display: block;
-    }
-}
