@@ -93,6 +93,7 @@ h3 {
     justify-content: space-between;
     background-color: #000;
     z-index: 10;
+    padding-bottom: .4rem;
     /* border: 1px red solid; */
 
     /* align-items: center; */
@@ -321,6 +322,30 @@ h3 {
 }  */
 
 /* INDEX */
+.typewriter-container {
+    display: flex;
+    /* text-align: center; */
+    align-items: center;
+}
+.typewriter-text {
+    margin-left: .5rem;
+    /* border-right: white solid 1px; */
+    /* height: .5rem; */
+}
+
+span {
+    animation: blinker 1s linear infinite;
+    height: 1rem;
+    margin-left: .05rem;
+    position: relative;
+    top: 1px
+}
+
+@keyframes blinker {
+    50%{
+        opacity: 0;
+    }
+}
 
 .headshot-container { 
     text-align: center;
@@ -335,7 +360,9 @@ h3 {
 .ios-app {
     /* background-image: url(/assets/apc-hero.png); */
     /* Need proper sizes */
-    background-color: black;
+    /* background-image: url(./assets/apc-hero.png);
+    background-position: right;
+    background-repeat: no-repeat; */
 }
 
 .packd {
@@ -371,6 +398,15 @@ h3 {
     text-decoration: none;
     font-family: var(--main-text);
     letter-spacing: 0.05em;
+}
+
+/* CASE STUDIES */
+.case-study-container {
+    padding-top: 5rem;
+}
+
+.case-study-img-container {
+    max-width: 1450px;
 }
 
 /* .project .purple-button {
