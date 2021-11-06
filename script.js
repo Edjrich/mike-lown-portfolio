@@ -14,7 +14,7 @@ app.hamburger_menu = function () {
 
 app.typingEffect = function () {
     const textDisplay = document.getElementById("typewriter-text");
-    const typewriterArray = ["UX/UI Designer", "Drummer", "Guy Who really likes FOOTY", "Friend of Eric", "NEEEERRRDDDD"];
+    const typewriterArray = ["UX/UI Designer", "Drummer", "FOOTY FAN", "Friend of Eric", "Cheeky bastard", "NEEEERRRDDDD"];
     let i = 0
     let j = 0;
     let currentPhrase = []
@@ -24,7 +24,6 @@ app.typingEffect = function () {
     function loop () {
         isEnd = false
         textDisplay.innerHTML = currentPhrase.join("");
-        // textDisplay.innerHTML = currentPhrase.join("") + "<span>|</span>";
 
         if (i < typewriterArray.length) {
 
@@ -64,7 +63,6 @@ app.typingEffect = function () {
 
 app.init = function() {
     app.hamburger_menu();
-    // app.typewriterText();
     app.typingEffect();
 }
 
