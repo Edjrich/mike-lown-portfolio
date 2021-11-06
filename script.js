@@ -14,7 +14,7 @@ app.hamburger_menu = function () {
 
 app.typingEffect = function () {
     const textDisplay = document.getElementById("typewriter-text");
-    const typewriterArray = ["UX/UI Designer", "Drummer", "FOOTY FAN", "Friend of Eric", "Cheeky bastard", "NEEEERRRDDDD"];
+    const typewriterArray = ["a UX/UI Designer", "a Storyteller", "He/Him", "a Start-Up Enthusiast", "a UX Copywriter", "a Brit living in Canada", "a Drummer", "always good for a Simpsons quote", "occasionally a Gnome Bard", "likely to bring donuts"];
     let i = 0
     let j = 0;
     let currentPhrase = []
