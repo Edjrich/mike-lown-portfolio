@@ -507,6 +507,7 @@ h3 {
     text-align: center;
     position: relative;
     flex-direction: row-reverse;
+    padding-bottom: 2.5rem;
 }
 
 .about-logo-container {
