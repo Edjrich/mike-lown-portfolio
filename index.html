@@ -26,8 +26,7 @@
                         <li><a class="ham-link" href="/about.html">About</a></li>
                         <li><a class="ham-link" href="/contact.html">Contact</a></li>
                     </ul>
-            </nav>
-    
+            </nav>    
             <section class="hero wrapper">
                     <h1>Hi, I'm Mike.</h1>
                     <div class="typewriter-container">
@@ -47,24 +46,72 @@
                     </div>
                     <h2>I'm a UX Designer currently based in Toronto, ON.</h2>
                 </figure>
-        
-                <section class="main-section">
-                    <!-- <div class="wrapper"> -->
-                        <p class="main-text">I'm an advocate for making inclusive tech in a world of 'disruptive' tech.</p>
-                        
-                        <p class="main-text">Informed by a background in customer care, I keep empathy at the heart of my design approach, ensuring accessibility across established and emerging technologies.</p> 
-                            
-                        <p class="main-text">My holistic approach to design problems cultivates business value by wrangling data into intuitive & impactful user experiences.</p>
-                
-                        <div class="main-button-container">
-                            <div class="button-container">
-                                <a class="purple-button" href="/ux.html">See my work</a>
-                            </div>
-                            <!-- <div class="button-container">
-                                <a class="purple-button" href="">View my resume</a>
-                            </div> -->
-                        </div>
-                </section>
+
+                <!-- start of carousel -->
+                <div class="carousel">
+                    <button class="carousel__button carousel__button--left is-hidden">Left</button>
+                    <div class="carousel__track-container">
+                        <ul class="carousel__track">
+                            <li class="carousel__slide current-slide">
+                                <!-- <section class="main-section"> -->
+                                    <!-- <div class="wrapper"> -->
+                                <div class="main-text-container">
+                                    <p class="main-text">I'm an advocate for making inclusive tech in a world of 'disruptive' tech.</p>
+                                
+                                    <p class="main-text">Informed by a background in customer care, I keep empathy at the heart of my design approach, ensuring accessibility across established and emerging technologies.</p>
+                                
+                                    <p class="main-text">My holistic approach to design problems cultivates business value by wrangling data into
+                                    intuitive & impactful user experiences.</p>
+                                </div>
+                                <!-- </section> -->
+                            </li>
+                            <li class="carousel__slide">
+                                <p>Skills:</p>
+                                <ul class="skill-list">
+                                    <li><a href="https://www.figma.com/" target="_blank"><i class="fab fa-figma"></i></a></li>
+                                    <li><a href="https://www.invisionapp.com/" target="_blank"><i class="fab fa-invision"></i></a></li>
+                                    <li>
+                                        <a href="https://www.adobe.com/ca/products/xd.html">
+                                                <div class="icon-container">
+                                                <img src="/assets/xd.png" alt="">
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>       
+                            <li class="carousel__slide">
+                                <p>Proficiencies (tools)</p>
+                                <ul class="proficiencies-list">
+                                    <li><p>Creating User Personas</p></li>
+                                    <li><p>Content Mapping</p></li>
+                                    <li><p>Skteching</p></li>
+                                    <li><p>Wireframing</p></li>
+                                    <li><p>Prototypes and Useability Testing</p></li>
+                                    <li><p>UX Copywriting</p></li>
+                                    <li><p>UI Design</p></li>
+                                    <li><p>Interaction Design</p></li>
+                                    <!-- <li><p>Storytelling</p></li>
+                                    <li><p>Affinity Mapping</p></li> -->
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="carousel__button carousel__button--right">Right</button>
+                    <div class="carousel__nav">
+                        <button class="carousel__indicator current-slide"></button>
+                        <button class="carousel__indicator"></button>
+                        <button class="carousel__indicator"></button>
+                    </div>
+                </div>
+                <!-- end of carousel -->
+                <div class="main-button-container">
+                    <div class="button-container">
+                        <a class="purple-button" href="/ux.html">See my work</a>
+                    </div>
+                    <!-- <div class="button-container">
+                                                                <a class="purple-button" href="">View my resume</a>
+                                                            </div> -->
+                </div>
             </section>
         </main>
 

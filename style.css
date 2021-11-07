@@ -172,13 +172,13 @@ h3 {
 /* } */ 
 
 .ham-ul.show {
-        display: flex;
-        background-color: white;
-        height: 100vh;
-        /* transform: scale(1, 0);
-        transition: transform 400ms ease-in-out; */
-        /* transform-origin: top; */
-    }
+    display: flex;
+    background-color: white;
+    height: 100vh;
+    /* transform: scale(1, 0);
+    transition: transform 400ms ease-in-out; */
+    /* transform-origin: top; */
+}
 
 .logo-container {
     display: flex;
@@ -324,6 +324,117 @@ h3 {
     justify-content: space-evenly;
 }
 
+/* CAROUSEL */
+
+.carousel {
+    position: relative;
+    /* height: 100%; */
+    height: 350px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* text-align: initial; */
+    /* review this later, much of this is likely not needed */
+}
+
+.carousel__track-container {
+    border: lightgreen 1px solid;
+    height: 100%;
+    position: relative;
+    transition: transform 250ms ease-in;
+    overflow: hidden;
+}
+
+.carousel__track {
+    position: relative;
+    height: 100%;
+}
+
+.carousel__slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.carousel__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /* background: transparent; */
+    /* border: 0; */
+}
+
+.carousel__button--left {
+    left: -50px;
+    cursor: pointer;
+}
+
+.carousel__button--right {
+    right: -65px;
+    cursor: pointer;
+}
+
+.carousel__nav {
+    border: pink 1px solid;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.carousel__indicator {
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: rgba(255, 255, 255, 1);
+    margin: 0 12px;
+    cursor: pointer;
+    /* transition: transform 250ms ease-in; */;
+}
+
+.carousel__button--right,
+.carousel__button--left {
+    border: 1px dodgerblue solid;
+    padding: .2rem;
+}
+
+.carousel__indicator.current-slide {
+    background: var(--purple);
+}
+
+.is-hidden {
+    display: none;
+}
+
+/* END OF CAROUSEL */ 
+
+.fa-figma,
+.fa-invision {
+    font-size: 100px;
+}
+
+.skill-list {
+    display: flex;
+    /* justify-content: center; */
+    justify-content: space-evenly;
+    /* padding-top: 1.5rem; */
+    height: 100%;
+    align-items: center;
+    align-content: center;
+}
+
+.icon-container {
+    max-width: 100px;
+}
+
+.proficiencies-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+}
+
 /* UX/PORTFOLIO */
 
 .ios-app {
@@ -363,6 +474,12 @@ h3 {
     position: center;
 }
 
+.main-text-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 
 .button-container {
@@ -382,8 +499,29 @@ h3 {
 
 /* ABOUT */
 
+.about-header-container { 
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    flex-direction: row-reverse;
+}
+
+.about-logo-container {
+    /* contains h1 */
+    /* max-width: 300px; */
+    width: 55%;
+    text-align: left;
+    display: flex;
+    align-content: center;
+    /* padding-left: 1rem; */
+    align-items: center;
+}
+
 .about-header-image-container {
-    max-width: 500px;
+    max-width: calc(33%);
     display: flex;
     justify-content: center;
     padding: 1rem 0;
@@ -393,7 +531,73 @@ h3 {
     border-radius: 50%;
 }
 
-.hobbies {
+.hobby {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6);
+}
+
+.design {
+    background-image: url(/assets/design-sketch.jpg);
+}
+
+.craft {
+    background-image: url(/assets/pouring.jpg);
+}
+
+.story {
+    background-image: url(/assets/evil-dead.jpg);
+}
+
+.music {
+    background-image: url(/assets/drumsticks-on-head.jpg);
+}
+
+.language {
+    background-image: url(/assets/BONJOOUUURRR.jpg);
+}
+
+.hobby-text {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hobby-header {
+    font-size: 3.5rem;
+}
+.hidden-text-container {
+    display: none;
+}
+
+.hidden-text {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.hobby:hover {
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.3);
+    transition: all 300ms ease-in-out;
+}
+
+.hobby:hover .hidden-text-container {
+    display: block;
+}
+
+.hobby:hover .hobby-header {
+    display: none;
+}
+
+
+
+
+
+/* .hobbies {
     background-color: #FFFFFF;
     color: var(--purple);
     padding-top: 2rem;
@@ -416,7 +620,7 @@ h3 {
 
 .dark-text {
     color: #000;
-}
+} */
 
 /* CONTACT */
 
@@ -480,7 +684,8 @@ form {
 footer {
     background-color: white;
     color: black;
-    padding: 2rem 0rem;
+    padding: 1.5rem 0rem;
+    /* margin-top: 1rem; */
 }
 
 .footer-nav {
