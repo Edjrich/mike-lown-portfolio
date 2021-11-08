@@ -779,9 +779,19 @@ footer {
         height: 95%;
     }
 
+    .figma-container {
+        padding: 0;
+        max-width: 68px;
+    }
+
+    .invision-container {
+        max-width: 100px;
+    }
+
     .xd-container {
         max-width: 85px;
     }
+
 }
 
 @media screen and (max-width:500px) {
