@@ -81,6 +81,11 @@ h3 {
 
 a {
     color: var(--purple);
+    transition: color 300ms ease-in-out;
+}
+
+a:hover {
+    color: var(--light-blue);
 }
 
 .center-text {
@@ -98,6 +103,15 @@ a {
     text-decoration: none;
     font-family: var(--main-text);
     letter-spacing: 0.05em;
+    transition: color 300ms ease-in-out,
+                background-color 300ms ease-in-out;
+    /* transition: 1s ease-in; */
+}
+
+.purple-button:hover {
+    background-color: white;
+    color: var(--purple);
+    /* transition: ease-in-out 300ms; */
 }
 
 /* HAMBURGER */
@@ -190,6 +204,7 @@ a {
 
 .logo {
     max-width: 5rem;
+    max-height: 80px;
     /* width: 30%; */
 }
 
@@ -210,7 +225,12 @@ a {
     margin-bottom: .5em;
     padding: 0;
     display: block;
+    transition: font-size 100ms ease-in-out;
 }
+
+/* .hamburger:hover {
+    font-size: 2.25rem;
+} */
 
 .hamburger:focus {
     outline: none;
@@ -685,12 +705,6 @@ form {
     row-gap: .6rem;
 }
 
-/* .form-top {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-} */
-
 .submit-button-container {
     display: flex;
     justify-content: center;
@@ -791,7 +805,6 @@ footer {
     .xd-container {
         max-width: 85px;
     }
-
 }
 
 @media screen and (max-width:500px) {
