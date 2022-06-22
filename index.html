@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <script src="https://kit.fontawesome.com/962e69995f.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,128 +13,158 @@
     <link rel="stylesheet" href="/style.css">
     <title>Mike Lown - UX Designer</title>
 </head>
-<body class="center-text">
-        <header>
-            <nav class="ham-nav">
-                <button class="hamburger" id="hamburger">
-                    <div class="bars"></div>
-                </button>
-                <div class="logo-container" id="nav-logo">
-                    <img class="logo" src="/assets/logo.png" alt="A logo displaying the letters M J L in a gradient of purple down to light blue">
-                </div>
-                    <ul class="ham-ul" id="ham-ul">
-                        <li><a class="ham-link" href="/ux.html">Portfolio</a></li>
-                        <li><a class="ham-link" href="/about.html">About</a></li>
-                        <li><a class="ham-link" href="/contact.html">Contact</a></li>
-                    </ul>
-            </nav>    
-            <section class="hero wrapper">
-                    <h1>Hi, I'm Mike.</h1>
-                    <div class="typewriter-container">
-                        <p class="main-text typewriter-text" id="typewriter-text"></p>
-                        <span class="typewriter-span">|</span>
-                    </div>
-            </section>
-        </header>
-        
-        <main>
-            <section class="wrapper">
-                <figure class="headshot">
-                    <div class="headshot-container">
-                        <img src="/assets/mr-lown.png" alt="A headshot of Mike Lown">
-                    </div>
-                    <h2>I'm a UX Designer currently based in Toronto, ON.</h2>
-                </figure>
 
-                <!-- start of carousel -->
-                <div class="carousel">
-                    <button class="carousel__button carousel__button--left is-hidden">Left</button>
-                    <div class="carousel__track-container">
-                        <ul class="carousel__track">
-                            <li class="carousel__slide current-slide">
-                                <div class="main-text-container">
-                                    <p class="main-text">I'm an advocate for making inclusive tech in a world of 'disruptive' tech.</p>
-                                    <p class="main-text">Informed by a background in customer care, I keep empathy at the heart of my design approach, ensuring accessibility across established and emerging technologies.</p>
-                                    <p class="main-text">My holistic approach to design problems cultivates business value by wrangling data into
+<body class="center-text">
+    <header>
+        <nav class="ham-nav">
+            <button class="hamburger" id="hamburger">
+                <div class="bars"></div>
+            </button>
+            <div class="logo-container" id="nav-logo">
+                <img class="logo" src="/assets/logo.png"
+                    alt="A logo displaying the letters M J L in a gradient of purple down to light blue">
+            </div>
+            <ul class="ham-ul" id="ham-ul">
+                <li><a class="ham-link" href="/ux.html">Portfolio</a></li>
+                <li><a class="ham-link" href="/about.html">About</a></li>
+                <li><a class="ham-link" href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <section class="hero wrapper">
+            <h1>Hi, I'm Mike.</h1>
+            <div class="typewriter-container">
+                <p class="main-text typewriter-text" id="typewriter-text"></p>
+                <span class="typewriter-span">|</span>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="wrapper">
+            <figure class="headshot">
+                <div class="headshot-container">
+                    <img src="/assets/mr-lown.png" alt="A headshot of Mike Lown">
+                </div>
+                <h2>I'm a UX Designer currently based in Toronto, ON.</h2>
+            </figure>
+
+            <!-- start of carousel -->
+            <div class="carousel">
+                <button class="carousel__button carousel__button--left is-hidden">Left</button>
+                <div class="carousel__track-container">
+                    <ul class="carousel__track">
+                        <li class="carousel__slide current-slide">
+                            <div class="main-text-container">
+                                <p class="main-text">I'm an advocate for making inclusive tech in a world of
+                                    'disruptive' tech.</p>
+                                <p class="main-text">Informed by a background in customer care, I keep empathy at the
+                                    heart of my design approach, ensuring accessibility across established and emerging
+                                    technologies.</p>
+                                <p class="main-text">My holistic approach to design problems cultivates business value
+                                    by wrangling data into
                                     intuitive & impactful user experiences.</p>
-                                </div>
-                            </li>
-                            <li class="carousel__slide">
-                                <h3>Skills</h3>
-                                <ul class="skill-list">
-                                    <!-- <li><a href="https://www.figma.com/" target="_blank"><i class="fab fa-figma"></i></a></li> -->
-                                    <li>
-                                        <a href="https://www.figma.com/" target="_blank">
-                                            <div class="figma-container">
-                                                <img src="/assets/figma-1-logo-png-transparent.png" alt="">
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.invisionapp.com/" target="_blank">
-                                            <div class="invision-container">
-                                                <img src="/assets/invision.png" alt="">
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.adobe.com/ca/products/xd.html">
-                                                <div class="xd-container">
-                                                    <img src="/assets/xd.png" alt="">
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>       
-                            <li class="carousel__slide">
-                                <h3>Skills</h3>
-                                <ul class="proficiencies-list">
-                                    <li><p class="skill-text">User Personas<p></li>
-                                    <li><p class="skill-text">Content Mapping<p></li>
-                                    <li><p class="skill-text">Sketching<p></li>
-                                    <li><p class="skill-text">Wireframing & Prototypes<p></li>
-                                    <li><p class="skill-text">Usability Testing<p></li>
-                                    <li><p class="skill-text">Affinity Mapping<p></li>
-                                    <li><p class="skill-text">UX Copywriting<p></li>
-                                    <li><p class="skill-text">Interaction Design</p></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <button class="carousel__button carousel__button--right">Right</button>
-                    <div class="carousel__nav">
-                        <button class="carousel__indicator current-slide"></button>
-                        <button class="carousel__indicator"></button>
-                        <button class="carousel__indicator"></button>
-                    </div>
+                            </div>
+                        </li>
+                        <li class="carousel__slide">
+                            <h3>Skills</h3>
+                            <ul class="skill-list">
+                                <!-- <li><a href="https://www.figma.com/" target="_blank"><i class="fab fa-figma"></i></a></li> -->
+                                <li>
+                                    <a href="https://www.figma.com/" target="_blank">
+                                        <div class="figma-container">
+                                            <img src="/assets/figma-1-logo-png-transparent.png" alt="">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.invisionapp.com/" target="_blank">
+                                        <div class="invision-container">
+                                            <img src="/assets/invision.png" alt="">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.adobe.com/ca/products/xd.html">
+                                        <div class="xd-container">
+                                            <img src="/assets/xd.png" alt="">
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="carousel__slide">
+                            <h3>Skills</h3>
+                            <ul class="proficiencies-list">
+                                <li>
+                                    <p class="skill-text">User Personas
+                                    <p>
+                                </li>
+                                <li>
+                                    <p class="skill-text">Content Mapping
+                                    <p>
+                                </li>
+                                <li>
+                                    <p class="skill-text">Sketching
+                                    <p>
+                                </li>
+                                <li>
+                                    <p class="skill-text">Wireframing & Prototypes
+                                    <p>
+                                </li>
+                                <li>
+                                    <p class="skill-text">Usability Testing
+                                    <p>
+                                </li>
+                                <li>
+                                    <p class="skill-text">Affinity Mapping
+                                    <p>
+                                </li>
+                                <li>
+                                    <p class="skill-text">UX Copywriting
+                                    <p>
+                                </li>
+                                <li>
+                                    <p class="skill-text">Interaction Design</p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
-                <!-- end of carousel -->
-                <div class="main-button-container">
-                    <div class="button-container">
-                        <a class="purple-button" href="/ux.html">See my work</a>
-                    </div>
+                <button class="carousel__button carousel__button--right">Right</button>
+                <div class="carousel__nav">
+                    <button class="carousel__indicator current-slide"></button>
+                    <button class="carousel__indicator"></button>
+                    <button class="carousel__indicator"></button>
                 </div>
-            </section>
-        </main>
+            </div>
+            <!-- end of carousel -->
+            <div class="main-button-container">
+                <div class="button-container">
+                    <a class="purple-button" href="/ux.html">See my work</a>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <section class="wrapper">
             <nav class="footer-nav">
                 <ul class="footer-ul">
                     <li>
-                        <a href="assets/pdfs/mike-lown-resume-2021.pdf" target="_blank"><i class="far fa-file"></i></a>
+                        <a href="assets/pdfs/MikeLownResume22.pdf" target="_blank"><i class="far fa-file"></i></a>
                     </li>
                     <li>
                         <a href="contact.html"><i class="far fa-envelope"></i></a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/mike-j-lown/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.linkedin.com/in/mike-j-lown/" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
                     </li>
                 </ul>
             </nav>
-            <!-- <p>Made in collaboration with <a href="https://ericrichardson.ca/">Eric Richardson</a> 2021</p> -->
         </section>
     </footer>
 </body>
 <script src="/script.js"></script>
+
 </html>
