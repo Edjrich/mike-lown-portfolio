@@ -43,7 +43,6 @@ h2,
 h3 {
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    /* text-align: center; */
     line-height: 1.5em;
 }
 
@@ -104,8 +103,7 @@ a:hover {
     font-family: var(--main-text);
     letter-spacing: 0.05em;
     transition: color 300ms ease-in-out,
-                background-color 300ms ease-in-out;
-    /* transition: 1s ease-in; */
+    background-color 300ms ease-in-out;
 }
 
 .purple-button:hover {
@@ -680,6 +678,10 @@ footer {
 @media screen and (max-width: 625px) {
     .project-bleed {
         background-position: initial;
+    }
+
+    .story {
+        background-position: left;
     }
     
 }
