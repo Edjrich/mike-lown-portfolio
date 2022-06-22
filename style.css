@@ -111,7 +111,6 @@ a:hover {
 .purple-button:hover {
     background-color: white;
     color: var(--purple);
-    /* transition: ease-in-out 300ms; */
 }
 
 /* HAMBURGER */
@@ -128,7 +127,6 @@ a:hover {
     justify-content: space-between;
     background-color: #000;
     z-index: 10;
-    /* max-width: 1600px; */
 }
 
 .ham-ul {
@@ -164,38 +162,16 @@ a:hover {
 }
 
 .ham-link:hover::after{
-    /* position: relative; */
     display: block;
     content: "";
     width: 100%;
     background-color: var(--purple);
-    /* background-position: left bottom; */
 }
-
-/* .ham-link:hover {
-    border-bottom: 2px solid black;
-} */
-
-/* .ham-ul li a:hover {
-    color: var(--purple);
-    /* border-bottom: 1px solid var(--purple); */
-    /* transition: .2s ease-in-out; */
-    /* border: 1px red solid; */
-    /* background-image: linear-gradient(to right, var(--purple) 100%, #fff 0);
-    background-position: 0 75%;
-    background-repeat: repeat-x;
-    background-size: 100% 5%;
-    width: min-content; */
-    /* transition: all 0.5s ease-in-out; */
-/* } */ 
 
 .ham-ul.show {
     display: flex;
     background-color: white;
     height: 100vh;
-    /* transform: scale(1, 0);
-    transition: transform 400ms ease-in-out; */
-    /* transform-origin: top; */
 }
 
 .logo-container {
@@ -205,19 +181,15 @@ a:hover {
 .logo {
     max-width: 5rem;
     max-height: 80px;
-    /* width: 30%; */
 }
 
 .hamburger {
-    /* display: flex;
-    justify-content: end; */
     background-color: transparent;
     border: 0;
     color: white;
     font-size: 2rem;
     cursor: pointer;
     display: none;
-    /* width: 3em; */
     height: 1.5em;
     position: relative;
     top: 10px;
@@ -228,10 +200,6 @@ a:hover {
     transition: font-size 100ms ease-in-out;
 }
 
-/* .hamburger:hover {
-    font-size: 2.25rem;
-} */
-
 .hamburger:focus {
     outline: none;
 }
@@ -239,11 +207,9 @@ a:hover {
 .bars {
     width: 1.5em;
     height: .25em;
-    /* background-color: var(--dark-blue); */
     background-color: var(--purple);
     position: relative;
     border-radius: 1em;
-    /* transition: 0.15s; */
     transition: 0.35s;
 }
 
@@ -261,12 +227,10 @@ a:hover {
 
 .bars::before {
     top: .4em;
-    /* background-color: var(--light-blue); */
 }
 
 .bars::after {
     top: -.4em;
-    /* background-color: var(--purple); */
 }
 
 /* HAMBURGER ANIMATION */
@@ -274,7 +238,6 @@ a:hover {
 .hamburger.active .bars {
     background-color:rgba(0,0,0,0);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
-    /* transition: 0.35s; */
     position: fixed;
 }
 
@@ -288,7 +251,6 @@ a:hover {
     background-color: var(--purple);
     top: 0;
     transform:rotate(135deg);
-    /* box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); */
 }
 
 .logo-container.hide {
@@ -303,8 +265,6 @@ a:hover {
 }
 .typewriter-text {
     margin-left: .5rem;
-    /* border-right: white solid 1px; */
-    /* height: .5rem; */
 }
 
 .main-section {
@@ -352,18 +312,14 @@ a:hover {
 
 .carousel {
     position: relative;
-    /* height: 100%; */
     height: 375px;
     width: 80%;
     margin: 0 auto;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    /* text-align: initial; */
-    /* review this later, much of this is likely not needed */
 }
 
 .carousel__track-container {
-    /* border: lightgreen 1px solid; */
     height: 100%;
     position: relative;
     transition: transform 250ms ease-in;
@@ -386,8 +342,6 @@ a:hover {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    /* background: transparent; */
-    /* border: 0; */
 }
 
 .carousel__button--left {
@@ -406,7 +360,6 @@ a:hover {
 }
 
 .carousel__nav {
-    /* border: pink 1px solid; */
     display: flex;
     justify-content: center;
     padding: 10px 0;
@@ -420,7 +373,6 @@ a:hover {
     background: rgba(255, 255, 255, 1);
     margin: 0 12px;
     cursor: pointer;
-    /* transition: transform 250ms ease-in; */;
 }
 
 .carousel__button--right,
@@ -446,9 +398,7 @@ a:hover {
 
 .skill-list {
     display: flex;
-    /* justify-content: center; */
     justify-content: space-evenly;
-    /* padding-top: 1.5rem; */
     height: 100%;
     align-items: center;
     align-content: center;
@@ -461,7 +411,6 @@ a:hover {
 
 .invision-container {
     max-width: 110px;
-    /* padding-left: 1rem; */
 }
 
 .xd-container {
@@ -485,8 +434,6 @@ a:hover {
 /* UX/PORTFOLIO */
 
 .ios-app {
-    /* background-image: url(/assets/iOS-hero.png); */
-    /* background-image: url(/assets/apc-hero-2.png); */
     background-image: url(/assets/apc-hero-small.png);
     background-position: top;
     background-repeat: no-repeat;
@@ -502,24 +449,20 @@ a:hover {
 }
 
 .packd .project {
-    /* border: red 1px solid; */
     display: flex;
     flex-direction: row-reverse;
 }
 
 .project-right {
-    /* border: 1px solid dodgerblue; */
     width: 50%;
 }
 
 .project-bleed {
-    /* border: dodgerblue 1px solid; */
     display: flex;
     align-items: center;
     background-position: center;
     background-repeat: no-repeat;
-    /* background-size: cover; */
-    height: 50vh;
+    height: 55vh;
     position: center;
 }
 
@@ -560,13 +503,10 @@ a:hover {
 }
 
 .about-logo-container {
-    /* contains h1 */
-    /* max-width: 300px; */
     width: 55%;
     text-align: left;
     display: flex;
     align-content: center;
-    /* padding-left: 1rem; */
     align-items: center;
 }
 
@@ -586,7 +526,6 @@ a:hover {
     background-repeat: no-repeat;
     height: 50vh;
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6);
-    /* max-width: 1600px; */
     margin: 0 auto;
 }
 
@@ -599,7 +538,8 @@ a:hover {
 }
 
 .story {
-    background-image: url(/assets/evil-dead.jpg);
+    background-image: url(/assets/Prince+Charles+Cinema-35.jpeg);
+    background-position: center;
 }
 
 .music {
@@ -645,35 +585,6 @@ a:hover {
     display: none;
 }
 
-
-
-
-
-/* .hobbies {
-    background-color: #FFFFFF;
-    color: var(--purple);
-    padding-top: 2rem;
-    text-align: center;
-}
-
-.hobby-container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.hobby {
-    padding: 1.5rem 1rem;
-}
-
-.hobby img {
-    min-width: 250px;
-    max-width: 250px;
-}
-
-.dark-text {
-    color: #000;
-} */
-
 /* CONTACT */
 
 .contact-image-container {
@@ -695,7 +606,6 @@ a:hover {
 .contact-span {
     color: var(--purple);
     border-bottom: 1px solid;
-    /* above is underline from original design, would recommend underline OR italics but not both */
     font-style: italic;
 }
 
@@ -731,7 +641,6 @@ footer {
     background-color: white;
     color: black;
     padding: 1.5rem 0rem;
-    /* margin-top: 1rem; */
 }
 
 .footer-nav {
@@ -744,7 +653,6 @@ footer {
     justify-content: center;
     margin: 0;
     padding: 0;
-    /* DO NOT FORGET TO REMOVE THIS LATER AFTER ADDING WILDCARD SELECTOR */
 }
 
 /* MEDIA QUERIES */
